@@ -48,6 +48,16 @@ header .nav ul li a{
 header .nav ul li a:hover{
     color: red;
 }
+.checkbtn{
+    display: none;
+    font-size: 30px;
+    color: rgba(0,0,0,0.9);
+    float: right;
+    line-height: 80px;
+}
+#check{
+    display: none;
+}
 .s1{
     background-color: #f9f9ff;
     width: 100%;
@@ -95,6 +105,7 @@ header .nav ul li a:hover{
     transition: all 0.25s;
     transition-timing-function: linear;
     outline: none;
+    cursor: pointer;
 }
 .half2{
     margin-left: 70px;
@@ -319,10 +330,9 @@ header .nav ul li a:hover{
 .s6yy .s63 .s99{
     margin-right: 10px;
 }
-.s63 img{
+.s6 .s6tt .s6yy .s63 .s99 img{
     width: 50px;
     height: 50px;
-    position: relative;
     border-radius: 50%;
 }
 .s63 .yi{
@@ -460,4 +470,209 @@ footer .foot .foot1 i{
 }
 footer .foot .foot1 i:hover{
     color: #8293ff;
+}
+@media (max-width:768px){
+    header{
+        width: 100%;
+        height: auto;
+        background-color: #f9f9ff;
+    }
+    header .logo{
+        margin-left: 30px;
+        padding: 20px;
+    }
+    .checkbtn{
+        display: block;
+        margin-right: -180px;
+    }
+    header .nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f9f9ff;
+        top:70px;
+        left:-200%;
+        transition: all 0.5s;
+        display: block;
+
+    }
+    header .nav ul li{
+        line-height: 30px;
+        clear: both;
+        margin-top: 15px;
+        margin-right: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    header .nav ul li a{
+        font-size: 20px;
+        text-align: center;
+        margin-left: 15px;
+    }
+}
+@media (max-width:768px){
+    .s1{
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    .half1{
+        margin: auto;
+        padding: 0;
+    }
+    .half1 h3{
+        padding-top: 20px;
+        font-size: 15px;
+    }
+    .half1 h1{
+        font-size: 30px;
+    }
+    .half2 img{
+        margin-left: 110px;
+        margin-top: 30px;
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media (max-width:768px){
+    .s2{
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    .s2 .half1{
+        margin-top: -110px;
+        margin-left: 180px;
+        padding: 0;
+    }
+    .s2 .half1 h3{
+        padding-top: 20px;
+        font-size: 15px;
+    }
+    .s2 .half1 h1{
+        font-size: 30px;
+    }
+    .s2 .half2 img{
+        margin-left: -50px;
+        margin-top: 30px;
+        max-width: 100%;
+        height: auto;
+    }
+    .s3{
+        width: 100%;
+        height: 820px;
+        top:40px;
+    }
+    .s3 .service .service1{
+        height: 280px;
+    }
+    .s3 .service .service1 div{
+        height: 250px;
+        width: 170px;
+    }
+    .s3 .service .service2{
+        height: 280px;
+    }
+    .s3 .service .service2 div{
+        height: 250px;
+        width: 180px;
+    }
+    .s4{
+        width: 100%;
+        height: 200px;
+    }
+    .s4 div{
+        width: 30px;
+        height: 180px;
+        margin-left: 50px;
+        margin-right: 110px;
+    }
+    .s5{
+        width: 100%;
+        height: 800px;
+    }
+    .s5 .w1{
+        margin-bottom: -50px;
+    }
+    .s5 .w2{
+        height: 50px;
+        margin-bottom: -170px;
+    }
+    .s5 .w3{
+        margin-top: 150px;
+        height: 150px;
+    }
+    .s5 .w3 div{
+        width: 100px;
+        height: 100px;
+        margin-left: 10px;
+        margin-right: 140px;
+    }
+    .s5 .w3 div img{
+        width: 200px;
+        height: 200px;
+    }
+    .s5 .w3 div h1{
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .s6{
+        width: 100%;
+        height: 250px;
+    }
+    .s6 .s6ll{
+        width: 100%;
+        height: 40px;
+        margin-left: -100px;
+    }
+    .s6 .s6tt .s6ll h1{
+        font-size: 20px;
+    }
+    .s6 .s6tt .s6ll p{
+        font-size: 12px;
+    }
+    .s6 .s6yy{
+        margin-top: 60px;
+        height: 170px;
+        margin-left: -110px;
+    }
+    .s6 .s6yy .s63{
+        height:120px;
+        overflow: auto;
+        width: 250px;
+        border-radius: 10px;
+    }
+    .s7 .card{
+        margin-left: 10px;
+    }
+    .s7 .card .yu{
+        width: 160px;
+        height: 520px;
+    }
+    .s7 .card .yu h1{
+        font-size: 30px;
+    }
+    .s7 .card .yu input{
+        text-align: center;
+        width: 100%;
+        left: 5px;
+        right: 5px;
+        font-size: 20px;
+        padding-left: 30px;
+    }
+    footer{
+        height: 350px;
+        width: 100%;
+    }
+    footer .foot{
+        margin-top: 20px;
+        height: 180px;
+        display: block;
+        width: 100%;
+    }
+    footer .foot .foot1{
+        margin-top: 5px;
+        margin-left: 20px;
+    }
 }
